@@ -1,0 +1,8 @@
+{
+  "rust-analyzer.runnables.extraEnv": {
+    // "PATH": "/home/codespace/.cargo/bin/:${env:PATH}"
+  },
+  "terminal.integrated.env.linux": {
+    // "PATH": "/home/codespace/.cargo/bin:${env:PATH}"
+  }
+}
