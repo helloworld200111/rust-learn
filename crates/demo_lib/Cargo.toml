@@ -1,0 +1,7 @@
+[package]
+name = "demo_lib"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+meval = "0.2.0"

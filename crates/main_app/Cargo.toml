@@ -1,0 +1,17 @@
+[package]
+name = "main_app"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[package.metadata.wix]
+upgrade-guid = "FFFF83E9-1167-4132-B33D-C67846FA8DBC"
+path-guid = "62FEB875-EC5B-4747-89B9-449449259A10"
+license = false
+eula = false
+
+[dependencies]
+encoding_rs = { workspace = true }
+walkdir = { workspace = true }
+serde = { workspace = true }
+toml = { workspace = true }

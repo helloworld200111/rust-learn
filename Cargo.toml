@@ -1,0 +1,19 @@
+[workspace]
+members = [ "crates/main_app" ]
+
+[workspace.dependencies]
+clap = { version = "4.5.4", features = ["derive"] }
+encoding_rs = "0.8.33"
+walkdir = "2.5.0"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["fzc <g7Q0j@example.com>"]
