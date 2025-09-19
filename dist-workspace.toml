@@ -3,12 +3,11 @@ members = ["cargo:."]
 
 # Config for 'dist'
 [dist]
-# ... other settings ...
-# This is the key: specify files to be included in the release archive.
-extra-assets = ["config.toml", "README.md", "LICENSE"]
+# Extra static files to include in each App (path relative to this Cargo.toml's dir)
+include = ["config.toml"]
 # The preferred dist version to use in CI (Cargo.toml SemVer syntax)
 cargo-dist-version = "0.29.0"
-# The installers to generate for each app
-installers = ["msi"]
 # Target platforms to build apps for (Rust target-triple syntax)
-targets = ["aarch64-apple-darwin", "aarch64-unknown-linux-gnu", "aarch64-pc-windows-msvc", "x86_64-apple-darwin", "x86_64-unknown-linux-gnu", "x86_64-unknown-linux-musl", "x86_64-pc-windows-msvc"]
+targets = ["x86_64-pc-windows-msvc"]
+# The installers to generate for each app
+installers = []

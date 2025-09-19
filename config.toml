@@ -1,14 +1,14 @@
 # Configuration for the file encoding converter
 
-# The path to the file or directory to convert.
-# Can be an absolute path (e.g., "C:\\Users\\Admin\\Documents")
-# or a relative path from where the program is run (e.g., "data_files").
+# 要转换的文件或目录的路径。
 path = "."
 
-# The target encoding to convert files to.
-# Common values: "utf-8", "utf-16le", "utf-16be", "latin1"
-target_encoding = "utf-8"
-
-# The file extension to process when 'path' is a directory.
-# The converter will only affect files with this extension.
+# 当'path'是目录时要处理的文件扩展名。
 file_extension = "txt"
+
+# 文件要转换成的目标编码。
+output_encoding = "utf-8"
+
+# 如果自动检测失败，可以尝试的输入编码列表。
+# 程序将按给定顺序尝试它们。
+input_encodings = ["gb2312", "gbk", "gb18030", "big5"]
